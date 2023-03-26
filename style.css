@@ -357,10 +357,9 @@ font-weight: 700px;
 }
 
 .service-description-wrap {
-  background:thistle;
-  padding-left: 116px;
-padding-top: 72.5px;
-padding-bottom: 72.5px;
+padding-left: 116px;
+
+padding-bottom: 144.5px;
 font-size: 18px;
 min-height: 174px;
 width:452px;
@@ -383,6 +382,13 @@ width:452px;
   width: 160px;
   padding: 10px 4px;
 }
+
+.service-description-title {
+font-size: 50px;
+line-height: 50px;
+font-weight: 800px;
+}
+
 /*delivery*/
 
 .categories {
@@ -394,7 +400,6 @@ width:452px;
 .special-order {
   margin-bottom: 70px;
   margin-top: 70px;
-  background: hotpink;
   position: relative;
 
 }
@@ -443,5 +448,14 @@ width:452px;
   z-index: 3;
 }
 
-width: 125px;
-margin: auto;
+.company-about {
+  background: salmon;
+}
+
+.company-contact {
+  background: teal;
+}
+
+.wrapper-about {
+  display: flex;
+}
