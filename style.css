@@ -459,3 +459,47 @@ font-weight: 800px;
 .wrapper-about {
   display: flex;
 }
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.company-contact-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.company-delivery-list {
+  font-weight: 700;
+}
+
+.company-delivery-list {
+  list-style: none; /* Remove default bullets */
+}
+
+.company-delivery-list .company-item::before {
+  content: "\2022";
+  color: #ffe17f;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.company-about {
+  min-height: 493px;
+  width: 520px;
+}
+
+.company-contact-wrapper {
+  width: 532px;
+  min-height: 545px;
+}
+
+.wrapper-about {
+  justify-content: space-between;
+}
