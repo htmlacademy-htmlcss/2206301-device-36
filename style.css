@@ -341,6 +341,12 @@ font-weight: 700px;
 
 .category-icon {
   background: #ffe17f;
+  background-position: center;
+}
+
+.categories-item {
+  justify-content: center;
+  align-content: center;
 }
 
 /*delivery*/
@@ -581,4 +587,69 @@ font-weight: 800px;
     bottom: 0;
     margin: auto;
     z-index: 4;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #444444;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 62px;
+  padding-bottom: 61px;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.footer-logo-link {
+  display: inline-block;
+  width: 145px;
+  height: 36px;
+  margin-bottom: 35px;
+}
+
+.footer-adress-wrapper {
+  width: 239px;
+  min-height: 40px;
+}
+
+.footer-navigation-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.footer-navigation-list .navigation-link {
+  color: white;
+}
+
+.footer-phone-link {
+  display: inline-block;
+  padding-top: 7px;
+  margin: auto;
+  margin-top: 0;
+  margin-right: 0;
+  color: white;
+  text-decoration: none;
+}
+
+ .decoration-line-orange {
+  background-color: #FFC700;
+  height: 7px;
+  width: 80px;
+}
+
+.footer-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.social-links-list {
+  display: flex;
 }
