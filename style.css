@@ -478,7 +478,7 @@ font-weight: 800px;
 }
 
 .company-delivery-list {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
 }
 
 .company-delivery-list .company-item::before {
@@ -502,4 +502,83 @@ font-weight: 800px;
 
 .wrapper-about {
   justify-content: space-between;
+
+}
+
+.newsletter {
+  padding-top: 64px;
+  padding-bottom: 57px;
+  background-color: #f0f0f0;
+}
+
+.newsletter-description-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.newsletter-description-text {
+  margin: 0;
+}
+
+.description-text-container {
+  min-width: 90px;
+  width: 560px;
+  background: yellow;
+}
+
+.newsletter-description {
+  display: flex;
+  margin-bottom: 144px;
+}
+
+
+/* newsletter form */
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.newsletter-email-field {
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding-left: 17px;
+  padding-bottom: 14px;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #c4c4c4;
+  width: 557px;
+}
+
+
+.newsletter-button {
+  padding: 14px 34px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 3px solid #c4c4c4;
+}
+
+/*
+.newsletter-free-text {
+
+
+  padding-left: 30px;
+  align-self: center;
+
+  position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 4;
 }
