@@ -68,6 +68,7 @@ body {
   position: relative;
   padding: 0 60px;
   background: linear-gradient(#ffffff 40px, #ffe17f 40px);
+  z-index: -3;
 }
 
 .header-logo {
@@ -268,10 +269,12 @@ body {
 .slider {
   padding-left: 30px;
   background: linear-gradient(#ffe17f 134px, #ffffff 134px);
+
 }
 
 .slider-wrapper {
   position: relative;
+  z-index: 0;
 }
 
 
@@ -287,13 +290,14 @@ body {
 }
 
 .slider-description {
-  padding-top: 122px;
+  padding-top: 100px;
+  z-index: 4;
 }
 
 .description-title {
-  margin: 0;
-    margin-bottom: 16px;
-    padding-top: 35px;
+  margin-top: -65px;
+    padding-top: 0px;
+
 
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -320,7 +324,9 @@ body {
   color: #ffffff;
   position: absolute;
   right: 49px;
-  top: 29px;}
+  top: 70px;
+  z-index: -1;
+}
 /*main*/
 
 .category-item-text {
