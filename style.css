@@ -253,8 +253,33 @@ body {
   margin: auto;
 }
 
+.header-login::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  background-image: url(images/menu_icons/icons-user.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 12px;
+  margin-top: 9px;
+}
+
+
 .header-compare {
   margin-right: 18px;
+}
+
+.header-compare::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  background-image: url(images/menu_icons/icon_compare.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 12px;
+  margin-top: 9px;
 }
 
 .header-compare .header-action-link {
@@ -285,6 +310,36 @@ body {
   text-align: center;
   color: #000000;
 }
+
+.header-basket::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  background-image: url(images/menu_icons/icons-basket.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 12px;
+  margin-top: 9px;
+
+}
+
+.basket-counter {
+  position: absolute;
+  right: 150px;
+  top: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 14px;
+  line-height: 17px;
+  transform: translateY(-50%);
+}
+
 
 .header-navigation {
   width: 100%;
@@ -324,14 +379,16 @@ body {
 }
 
 .slider {
-  padding-left: 30px;
   background: linear-gradient(#ffe17f 134px, #ffffff 134px);
+  justify-content: space-between;
+  display: flex;
 
 }
 
 .slider-wrapper {
   position: relative;
   z-index: 0;
+
 }
 
 
@@ -344,6 +401,7 @@ body {
 .slider-image {
   width: 560px;
   height: 560px;
+  padding-right: 0;
 }
 
 .slider-description {
@@ -386,6 +444,10 @@ body {
 }
 /*main*/
 
+.categories-item {
+
+}
+
 .category-item-text {
 font-family: Raleway, sans-serif;
 font-size: 18px;
@@ -406,6 +468,7 @@ font-weight: 700px;
   background: #ffe17f;
   background-position: center;
   margin: auto;
+  color: blue;
 }
 
 .categories-item {
@@ -518,13 +581,6 @@ font-weight: 800px;
   z-index: 3;
 }
 
-.company-about {
-  background: salmon;
-}
-
-.company-contact {
-  background: teal;
-}
 
 .wrapper-about {
   display: flex;
@@ -596,7 +652,6 @@ font-weight: 800px;
 .description-text-container {
   min-width: 90px;
   width: 560px;
-  background: yellow;
 }
 
 .newsletter-description {
