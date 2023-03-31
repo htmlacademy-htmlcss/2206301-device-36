@@ -188,7 +188,7 @@ body {
 
   .header-catalog-button {
     position: relative;
-    /* display: inline; */
+
     align-items: center;
     min-width: 293px;
     min-height: 50px;
@@ -197,11 +197,11 @@ body {
     line-height: 21px;
     font-weight: 800;
     text-transform: uppercase;
-    /* text-decoration: none; */
+
     color: #000000;
     background-color: transparent;
     border: none;
-    /* padding-right: 0px; */
+
     text-align: left;
 }
 
