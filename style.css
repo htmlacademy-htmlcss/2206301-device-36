@@ -476,7 +476,7 @@ vertical-align: top;
 letter-spacing: 0.2em;
 text-transform: uppercase;
 min-height: 40px;
-min-width: 220px;
+min-width: 160px;
 position:relative;
 padding-right: 40px;
 padding-left: 40px;
@@ -577,8 +577,8 @@ width: 20px;
 }
 
 .button-service {
- padding: 0px;
-width: 220px;
+padding: 0px;
+width: 160px;
 }
 
 .service-meny-list {
@@ -596,6 +596,7 @@ font-weight: 700px;
 
 .categories-list {
   list-style: none;
+  padding-inline-start: 0px;
 
 
 }
@@ -623,23 +624,137 @@ font-weight: 700px;
 /*delivery*/
 
 .service {
-  min-height: 390px;
+  min-height: 320px;
   background: linear-gradient(#ffffff 100px, #f0f0f0 100px);
   display:flex;
 }
 
-.service-meny {
-  width: 287px;
-  min-height: 319px;
+.container-service {
+  box-sizing: border-box;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.service-description-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 1160px;
+  min-height: 174px;
+  margin-bottom: 72px;
+  margin-left: 72px;;
+
+}
+
+.service-description-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 694px;
+}
+
+.service-description-heading {
+  width: 440px;
+  margin-top: 0;
+}
+
+.service-description-title {
+  margin-bottom: 34px;
+  margin-top: 72px;
+}
+
+
+.service-delivery::after {
+  content: "";
+  width: 132px;
+  height: 158px;
+  background-image:url(images/decoration-icons/delivery-guy.svg);
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.service-warranty::after {
+  content: "";
+  width: 132px;
+  height: 158px;
+  background-image:url(images/decoration-icons/warranty-icon.svg);
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.service-loan::after {
+  content: "";
+  width: 132px;
+  height: 158px;
+  background-image:url(images/decoration-icons/loan-icon.svg);
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.service-meny-item-active {
+  background-color: black;
+  z-index: 1;
+}
+
+.button-service-active {
+  color: #ffe17f;
+}
+
+
+
+.service-description-item.service-item-active {
+  opacity: 1;
+}
+
+button.button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  z-index: 0;
+}
+
+button.button::after {
+  content: "";
+  width: 100%;
+  height: 8px;
+  background: #ffe17f;
+  position:absolute;
+  top: 16px;
+  right: 0px;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+.service-meny-list::after {
+  content:"";
+  width: 7px;
+  height: 319px;
+  background-color: black;
+  position: absolute;
+  z-index: 6;
+  left:280px;
+  top:0;
 }
 
 .service-description-wrap {
 padding-left: 116px;
-
-padding-bottom: 144.5px;
+padding-bottom: 144px;
 font-size: 18px;
 min-height: 174px;
-width:452px;
+width:694px;
 }
 
 .service-meny-list {
@@ -647,17 +762,8 @@ width:452px;
   display: flex;
   flex-direction: column;
   gap: 45px;
-}
-
-.service-meny-item {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 700px;
-  line-height: 21px;
-  background: #ffe17f;
-  min-height: 40px;
-  width: 160px;
-  padding: 10px 4px;
+  padding-right: 40px;
+  min-width: 280px;
 }
 
 .service-description-title {
